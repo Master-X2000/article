@@ -5,16 +5,16 @@ const writer = document.querySelector(".writer");
 shareTo.style.display = "none";
 let shareToState = "none";
 
-shareTo.addEventListener("click", (event) => {
+/* shareTo.addEventListener("click", (event) => {
     shareTo.style.display = "flex";
     shareBtn.style.backgroundColor = "#6d7f97";
     shareBtnArrow.style.fill = "#fff";
     shareToState = "flex";
     writer.classList.add("hide_writer");
-});
+}); */
 
 shareBtn.addEventListener("click", (event) => {
-    let target = event.target;
+    const target = event.target;
     if(shareToState === "none") {
         shareTo.style.display = "flex";
         shareBtn.style.backgroundColor = "#6d7f97";
