@@ -40,7 +40,7 @@ body{
     grid-template-columns: 40% 60%;
     max-width:45rem;
     background-color:var(--MAIN-BG-CLR);
-    margin:3.75rem;
+    margin:clamp(1.5rem, 0.6vw, 4rem);
     border-radius:10px;
     box-shadow: 0px 3px 10px 1px hsla(212, 23%, 69%, 0.7);
 }
@@ -58,7 +58,7 @@ body{
 } */
 
 .txt .header{
-    font-size: clamp(20px, 1.2vw, 35px);
+    font-size: clamp(1.25rem, 1.2vw, 2.188rem);
     font-weight:700;
     line-height:1.2;
     color:var(--TXT-CLR-700);
@@ -207,7 +207,7 @@ body{
     width:18px;
 }
 
-@media screen and (max-width: 625px){
+@media screen and (max-width: 39.063rem){
     .wrapper {
         display:grid;
         grid-template-columns: none;
